@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+
+</head>
+<body>
+    <div class="Container">
+        <div id="title">MANAS AGARWAL</div>
+        <div class="navbar">
+
+            <div id="menu">
+    
+                <a href="#About">About</a> 
+                <a href="#skills">Skills</a>
+                <a href="#Edu"> Education</a>
+                <a href="#PrjctTitle">Project</a>
+                <a href="#training">Training</a>
+                <a href="#Awards">Achievments</a>
+    
+            </div>
+        </div>
+
+        <div class="Ab">
+            <div id="image">
+                <img src="warrior.jpg" alt="My Image" height="220px" width="180px"/>
+            </div>
+    
+            <div id="About"> <h2>About Me</h2>  
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500
+            </div>
+        </div>
+
+        <div class="Skillset" id="skills">
+            <h2>Skills</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable.</p>
+            <p>Lorem Ipsum as their default model text, and a search for 'lorem ipsum.</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
+        </div>
+
+        <div id="Edu">
+            <h2>Education</h2>
+            <h4>University</h4>
+            <p>1. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC </p>
+            <p> <t>GPA : 100 </t></p>
+            <p> <t>Year: 2000 </t></p>
+            <br>
+            <h4>University</h4>
+            <p>2. Latin words, combined with a handful of model sentence structures</p>
+            <p> <t>GPA : 100 </t></p>
+            <p> <t>Year: 2000 </t></p>     
+        </div>
+
+        <div class="prjct">
+            <div id="PrjctTitle">Project </div>
+            <div id="project1"> Project1</div>
+            <div id="project2"> Project2</div>
+            <div id="project3"> Project3</div>
+            <div id="project1_1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
+            <div id="project2_2">Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga</div>
+            <div id="project3_3">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta</div>
+        </div>        
+
+        <div id="training">
+            <h2>Training and Releated Coursework </h2>
+            <h4>Training 1</h4>
+            <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecation.</p>
+            <h4>Training 2</h4>
+            <p>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum.</p>
+            <h3>Releated Coursework</h3>
+            <p>
+                1. Facilis est et expedita distinctio<br>
+                2. Et harum quidema. <br>
+                3. Tenetur a sapiente delectus.
+            </p>
+        </div>
+
+        <div id="Achievments">
+            <h2>Achievments </h2>
+            <p>•  On the other hand, we denounce with righteous indignation and dislike. <br>
+                •  That they cannot foresee the pain.<br>
+                •  When our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure. <br>
+                •  At vero eos et accusamus et iusto odio dignissimos.
+            </p>
+        </div>
+
+        <div id="Awards">
+            <h3> Awards</h3>
+            <p>•  We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+            <p>•  Matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
+            <p>•  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
+    
+        </div>
+
+        <div class="social">
+            <div id="Connection">Connect Me</div>
+            <div id="Linkedin"></div>
+            <div id="Facebook"></div>
+            <div id="GitHUB"></div>
+            
+        </div>
+    </div>
+    
+</body>
+<style>
+    .Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.15fr 0.10fr 0.50fr 0.70fr 1fr 0.50fr 0.15fr ;
+    grid-template-areas:
+    "title title title"
+    "nav nav nav"
+    "abt abt skills"
+    "edu project project"
+    "trng trng trng"
+    "ach ach awards"
+    "ftr ftr ftr" ;
+    gap: 20px;
+    padding: 10px;
+
+
+}
+
+#title{
+    font-size: 40px;
+    text-align: center;
+    grid-area: title;
+}
+.navbar{
+    background-color: rgba(32, 32, 28, 0.838);
+    grid-area: nav;
+}
+#menu a{
+    background-color: rgba(126, 123, 95, 0);
+    padding: 20px;
+    font-size: 20px;
+    text-align: right ;
+    color: white;
+}
+
+.Ab{
+    background-color: rgba(193, 193, 196, 0.587);
+    padding: 20px;
+    font-size: 20px;
+    grid-area: abt;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "img about";
+    border: 1px solid black;
+}
+
+#image{
+    background-color: rgba(0, 255, 255, 0);
+    padding: 5px;
+    grid-area: img;
+}
+
+#About{
+    font-size: 20px;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 20px;
+    grid-area: about;
+}
+
+.Skillset{
+    background-color: rgba(193, 193, 196, 0.587);
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    grid-area: skills;
+}
+
+#Edu{
+    background-image: url("Education.jpg");
+    background-size: 100%;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.828);
+    grid-area: edu;
+}
+
+.prjct{
+    background-color: rgba(202, 167, 122, 0.873);
+    grid-area: project;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.4fr 0.5fr ;
+    grid-template-areas:
+    "ProjectTitle ProjectTitle ProjectTitle"
+    "project1 project2 project3" 
+    "Project1 Project2 Project3";
+    gap: 30px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+#PrjctTitle{
+    grid-area: ProjectTitle;
+}
+
+#project1{
+    background-image: url("Project1.jpg");
+    background-size: 320px;
+    text-align: center;
+    grid-area: project1;
+    border-style: double;
+}
+#project1_1{
+    grid-area: Project1;
+}
+
+#project2{
+    background-image: url("Project2.jpg");
+    background-size: 320px;
+    text-align: center;
+    grid-area: project2;
+    border-style: double;
+}
+#project2_2{
+    grid-area: Project2;
+}
+
+#project3{
+    background-image: url("Project3.jpg");
+    background-size: 320px;
+    text-align: center;
+    grid-area: project3;
+    border-style: double;
+}
+
+#project3_3{
+    grid-area: Project3;
+}
+
+#training{
+    background-color: rgba(213, 157, 131, 0.935);
+    font-size: 23px;
+    padding:20px;
+    grid-area: trng;
+}
+#Achievments{
+    background-color: rgba(192, 213, 221, 0.792);
+    font-size: 30px;
+    grid-area: ach;
+    padding: 20px;
+}
+
+#Awards{
+    background-color: rgba(192, 213, 221, 0.792);
+    font-size: 20px;
+    grid-area: awards;
+    padding: 20px;
+}
+
+.social{
+    background-color: rgb(227, 222, 175, 0.747);
+    grid-area: ftr;
+    font-size: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "Connect Facebook Linkedin Github"
+}
+#Connection{
+    grid-area: Connect;
+}
+#Linkedin{
+    grid-area: Linkedin;
+    background-image: url("linkedin.png");
+    background-size: 50px;
+    margin-right: 290px;
+    border: 2px solid black;
+}
+
+#Facebook{
+    grid-area: Facebook;
+    background-image: url("fb.jpg");
+    background-size: 80px;
+    margin-right: 277px;
+    padding-right: 10px;
+    border:2px solid black;
+}
+
+#GitHUB{
+    grid-area: Github;
+    background-image: url("Github.png");
+    background-size: 50px;
+    margin-right: 290px;
+    border: 2px solid black;
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+    .Container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.10fr 0.10fr 0.40fr 0.50fr 1.50fr 0.50fr 0.50fr 0.50fr 0.10fr;
+        grid-template-areas:
+        "title title"
+        "nav nav"
+        "abt skills"
+        "edu edu"
+        "project project"
+        "trng trng"
+        "ach ach"
+        "awards awards"
+        "ftr ftr" ;
+        gap: 10px;
+    }
+
+    #title{
+        grid-area: title;
+    }
+    .navbar{
+        grid-area: nav;
+    }
+
+    .Ab{
+        grid-area: abt;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.75fr;
+        grid-template-areas:
+        "imge"
+        "about";
+        margin-right: 30px;
+
+    }
+    #image{
+        grid-area: imge;
+    }
+
+    #About{
+        margin-top: -30px;
+        grid-area: about;
+    }
+    .Skillset{
+        grid-area: skills;
+        padding: -15px;
+        margin-left: -30px;
+    }
+    #Edu{
+        grid-area: edu;
+    }
+    .prjct{
+        grid-area: project;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.10fr 1fr 1fr 1fr 1fr 1fr 0.90fr;
+        grid-template-areas:
+        "ProjectTitle"
+        "project1" 
+        "Project1"
+        "project2" 
+        "Project2"
+        "project3"
+        "Project3";
+        font-size: 20px;
+    }
+    #project1{
+        background-image: url("Project1.jpg");
+        background-size: 320px;
+        text-align: center;
+        background-repeat: no-repeat;
+        grid-area: project1;
+        margin-left: 70px;
+        margin-right: 73px;
+    }
+
+    #project2{
+        background-image: url("Project2.jpg");
+        background-size: 320px;
+        text-align: center;
+        background-repeat: no-repeat;
+        grid-area: project2;
+        margin-left: 70px;
+        margin-right: 73px;
+    }
+
+    #project3{
+        background-image: url("Project3.jpg");
+        background-size: 320px;
+        text-align: center;
+        background-repeat: no-repeat;
+        grid-area: project3;
+        border-style: double;
+        margin-left: 70px;
+        margin-right: 73px;
+    }
+    #Linkedin{
+        margin-right: -50px;
+    }
+    #Facebook{
+        margin-left: 20px;
+        margin-right: 100px;
+    }
+    #GitHUB{
+        margin-left: 140px;
+    }
+}
+</style>
+</html>
